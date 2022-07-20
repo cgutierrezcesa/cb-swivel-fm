@@ -1,4 +1,6 @@
 import * as Rox from 'rox-browser';
+import { deviceType } from "react-device-detect";
+
 
 
             const Flags = {
@@ -8,8 +10,8 @@ import * as Rox from 'rox-browser';
 
              export const userList = [
               {
-                username: 'betauser',
-                id: '122112',
+                device: deviceType,
+              
               }]
 
              export const configurationFetchedHandler = fetcherResults => {
@@ -23,6 +25,7 @@ import * as Rox from 'rox-browser';
         async function initRollout() {
             const options = {
               configurationFetchedHandler: configurationFetchedHandler,
+              user: userList, 
             }
           
             // Register the flags with Rollout
