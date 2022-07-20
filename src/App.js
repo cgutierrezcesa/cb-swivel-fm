@@ -5,7 +5,7 @@ import SWBC from './pages/indexSWBC';
 import SigninPage from './pages/signin';
 import Express from './pages/expressCheckout';
 import { useFlags} from 'launchdarkly-react-client-sdk';
-
+import "./components/Hero/Flags"
 
 
 function App() {
